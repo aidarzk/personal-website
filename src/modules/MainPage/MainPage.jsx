@@ -3,7 +3,7 @@ import { Layout } from "antd";
 import {
   CustomHeader,
   PictureAndDescription,
-  EducationAndCourses,
+  Education,
   Experience,
 } from "./components";
 import * as styles from "./styles.module.less";
@@ -20,6 +20,7 @@ const MainPage = () => {
         <div className={styles.container}>
           <PictureAndDescription />
           <Experience />
+          <Education />
         </div>
       </Content>
     </Layout>
