@@ -47,12 +47,12 @@ const Education = () => {
   return (
     <div className={styles.container}>
       <Row>
-        <Col span={6}>
+        <Col span={8}>
           <Title className={styles.title} level={2}>
             Education
           </Title>
         </Col>
-        <Col span={18}>
+        <Col span={16}>
           <Collapse ghost>
             {educations.map((exp) => (
               <Panel

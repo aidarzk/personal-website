@@ -11,66 +11,61 @@ import {
 
 const { Panel } = Collapse;
 
-const text = `
-  A dog is a type of domesticated animal.
-  Known for its loyalty and faithfulness,
-  it can be found as a welcome guest in many households across the world.
-`;
 const { Title, Text } = Typography;
 
-const Experience = () => {
-  const experiences = [
+const Courses = () => {
+  const courseses = [
     {
       id: 1,
-      title: "Torfeh Negar",
-      jobTitle: "Front End Developer",
-      date: "September 2019 to Present",
+      title: "Diploma Of React ",
+      jobTitle: "University Of Tehran (utech academy)",
+      date: "June 2019 To September 2019 ",
       details: [
         {
-          title:
-            "I started as a junior Front-End developer but soon I improved myself as one of the best Front-End developers in the team.",
+          title: "Graduated with the score of 100/100",
+        },
+        {
+          title: "+100 hours project-based training and workshops",
+        },
+        {
+          title: "Building a messenger using react, redux and Axios",
         },
         {
           title:
-            "Torfeh Negar is one of the biggest software companies in Iran with different online products like financial and accounting services and etc. I as a frontend developer has participated in two different projects in the company and also I had these responsibilities:",
-          descriptions: [
-            "Attending scrum meetings",
-            "Developing and building the sites using: Next JS, React, React hook, Redux, HTML, CSS, JavaScript and Adding dynamic functionality and responsive pages",
-            "Creating new features",
-            "Performing bug fixes",
-            "Collaborating with designers to maintain an efficient design",
-            "Collaborating with Back-End developers to build a dynamic application",
-            "Writing tests using jest, enzyme and react-testing-library",
-            "I got promoted as the Front-End Leader since January 2021. And I am responsible for managing two Front-End teams, assigning the tasks to the most suitable person, code review and approving or rejecting tasks. Mentoring other developers on how to code and performing interviews",
-          ],
+            "Designing and building a mobile Application using react native for Android and IOS",
         },
       ],
     },
     {
       id: 2,
-      title: "Asiatech",
-      jobTitle: "Call Center Expert",
-      date: "December 2018 To Auguest 2019",
+      title: "CCNP Route",
+      jobTitle: "Kendo Academy",
+      // date: "2011 To 2014",
       details: [
         {
-          title:
-            "I was responsible for guiding customers with internet issues and solve the problem",
-        },
-        {
-          title:
-            "I scored 100 and became the best expert of the month among 80 employees for four consecutive months",
+          title: "Graduated as the best student in the class",
         },
       ],
     },
     {
       id: 3,
-      title: "Sarv Rayaneh",
-      jobTitle: "Internship",
-      date: "July 2018 To October 2019",
+      title: "CCNP Switch",
+      jobTitle: "Kendo Academy",
+      // date: "2011 To 2014",
+      // details: [
+      //   {
+      //     title: "Graduated as the best student in the class",
+      //   },
+      // ],
+    },
+    {
+      id: 4,
+      title: "CCNP ROUTE",
+      jobTitle: "Kendo Academy",
+      // date: "2011 To 2014",
       details: [
         {
-          title:
-            "I was responsible for upgrading windows and performed as a help desk technician.",
+          title: "Ranked within top three students in the class",
         },
       ],
     },
@@ -81,12 +76,12 @@ const Experience = () => {
       <Row>
         <Col span={8}>
           <Title className={styles.title} level={2}>
-            Experience
+            Courses
           </Title>
         </Col>
         <Col span={16}>
           <Collapse ghost>
-            {experiences.map((exp) => (
+            {courseses.map((exp) => (
               <Panel
                 className={styles.panel}
                 header={
@@ -154,4 +149,4 @@ const Experience = () => {
   );
 };
 
-export default Experience;
+export default Courses;

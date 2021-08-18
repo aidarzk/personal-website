@@ -5,6 +5,7 @@ import {
   PictureAndDescription,
   Education,
   Experience,
+  Courses,
 } from "./components";
 import * as styles from "./styles.module.less";
 
@@ -21,6 +22,7 @@ const MainPage = () => {
           <PictureAndDescription />
           <Experience />
           <Education />
+          <Courses />
         </div>
       </Content>
     </Layout>
