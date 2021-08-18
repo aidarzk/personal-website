@@ -1,0 +1,62 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add pretier
+
+PATH: 
+  C:\Python39\Scripts\;C:\Python39\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Git\cmd;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;;%SystemRoot%\system32;%SystemRoot%;%SystemRoot%\System32\Wbem;%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\;%SYSTEMROOT%\System32\OpenSSH\;C:\Users\Aida\AppData\Local\Microsoft\WindowsApps;;C:\Users\Aida\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Aida\AppData\Local\Yarn\bin;C:\Users\Aida\AppData\Roaming\npm
+
+Yarn version: 
+  1.22.4
+
+Node version: 
+  14.15.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: EBUSY: resource busy or locked, copyfile 'C:\Users\Aida\AppData\Local\Yarn\Cache\v6\npm-jimp-0.14.0-fde55f69bdb918c1b01ac633d89a25853af85625-integrity\node_modules\jimp\browser\examples\dice.png' -> 'E:\personal website\personal-website\node_modules\jimp\browser\examples\dice.png'
+
+npm manifest: 
+  {
+    "name": "aida-s-personal-website",
+    "version": "1.0.0",
+    "private": true,
+    "description": "Aida's personal website",
+    "author": "aidarzk",
+    "keywords": [
+      "gatsby"
+    ],
+    "scripts": {
+      "develop": "gatsby develop",
+      "start": "gatsby develop",
+      "build": "gatsby build",
+      "serve": "gatsby serve",
+      "clean": "gatsby clean"
+    },
+    "dependencies": {
+      "@mdx-js/mdx": "^1.6.22",
+      "@mdx-js/react": "^1.6.22",
+      "antd": "^4.16.10",
+      "gatsby": "^3.11.0",
+      "gatsby-plugin-gatsby-cloud": "^2.11.0",
+      "gatsby-plugin-google-analytics": "^3.11.0",
+      "gatsby-plugin-image": "^1.11.0",
+      "gatsby-plugin-manifest": "^3.11.0",
+      "gatsby-plugin-mdx": "^2.11.0",
+      "gatsby-plugin-react-helmet": "^4.11.0",
+      "gatsby-plugin-sharp": "^3.11.0",
+      "gatsby-plugin-sitemap": "^4.7.0",
+      "gatsby-source-filesystem": "^3.11.0",
+      "gatsby-transformer-remark": "^4.8.0",
+      "gatsby-transformer-sharp": "^3.11.0",
+      "react": "^17.0.1",
+      "react-dom": "^17.0.1",
+      "react-helmet": "^6.1.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

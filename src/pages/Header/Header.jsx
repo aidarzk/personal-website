@@ -2,17 +2,18 @@ import React from 'react'
 
 import { PageHeader, Button, Descriptions } from 'antd';
 
+import {HeaderStyle as style} from './HeaderStyle.module.less'
 
 const Header = () => {
     return (
         <div className="site-page-header-ghost-wrapper">
     <PageHeader
       ghost={false}
-      onBack={() => window.history.back()}
-      title="Title"
-      subTitle="This is a subtitle"
+      // onBack={() => window.history.back()}
+      title="Aida Rezakhani"
+      // subTitle="This is a subtitle"
       extra={[
-        <Button key="3">Operation</Button>,
+        <Button className={style.button} key="3">Operation</Button>,
         <Button key="2">Operation</Button>,
         <Button key="1" type="primary">
           Primary
