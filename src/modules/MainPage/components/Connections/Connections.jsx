@@ -14,9 +14,10 @@ const { Panel } = Collapse;
 
 const { Title, Text } = Typography;
 
-const Connections = () => {
+const Connections = (props) => {
+  const { connectRef } = props;
   return (
-    <div className={styles.container}>
+    <div className={styles.container} ref={connectRef}>
       <Row>
         <Col span={8}>
           <Title className={styles.title} level={2}>

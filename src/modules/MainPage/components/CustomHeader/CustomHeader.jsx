@@ -1,27 +1,30 @@
 import React from "react";
 
-import { PageHeader, Button, Descriptions } from "antd";
+import { PageHeader, Button, Descriptions, Typography } from "antd";
 
 import * as styles from "./HeaderStyle.module.less";
 
-const CustomHeader = () => {
+const { Text } = Typography;
+
+const CustomHeader = (props) => {
+  const { handleClick } = props;
   return (
     <div className="site-page-header-ghost-wrapper">
       <PageHeader
         ghost={true}
         // onBack={() => window.history.back()}
-        title="Aida Rezakhani"
+        title={<Text className={styles.aida}>Aida Rezakhani</Text>}
         // subTitle="This is a subtitle"
         extra={[
-          <Button type="text" className={styles.mybutton} key="3">
-            bio
-          </Button>,
-          <Button type="text" key="2">
+          // <Button type="text" className={styles.mybutton} key="3">
+          //   bio
+          // </Button>,
+          <Button onClick={() => handleClick("connect")} type="text" key="2">
             connect
           </Button>,
-          <Button type="text" key="1">
-            blog
-          </Button>,
+          // <Button type="text" key="1">
+          //   blog
+          // </Button>,
         ]}
       >
         {/* <Descriptions size="small" column={3}>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Layout } from "antd";
 import {
   CustomHeader,
@@ -14,11 +14,20 @@ import * as styles from "./styles.module.less";
 
 const MainPage = () => {
   const { Header, Content, Footer } = Layout;
+  const connectRef = useRef(null);
+
+  const handleClick = (myRef) => {
+    console.log("handklekekkkkkk", myRef);
+    if (myRef === "connect") {
+      console.log(" connectRef?.current", connectRef?.current);
+      connectRef?.current?.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <Layout>
       <Header className={styles.myHeader}>
-        <CustomHeader />
+        <CustomHeader handleClick={handleClick} />
       </Header>
       <Content className={styles.content}>
         <div className={styles.container}>
@@ -31,7 +40,7 @@ const MainPage = () => {
         </div>
       </Content>
       <Footer>
-        <Connections />
+        <Connections connectRef={connectRef} />
       </Footer>
     </Layout>
   );
