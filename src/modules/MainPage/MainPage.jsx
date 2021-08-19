@@ -8,6 +8,7 @@ import {
   Courses,
   Skills,
   LangsAndResearch,
+  Connections,
 } from "./components";
 import * as styles from "./styles.module.less";
 
@@ -27,6 +28,7 @@ const MainPage = () => {
           <Courses />
           <Skills />
           <LangsAndResearch />
+          <Connections />
         </div>
       </Content>
     </Layout>
