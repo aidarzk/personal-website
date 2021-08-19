@@ -24,9 +24,18 @@ const Connections = () => {
           </Title>
         </Col>
         <Col span={16} className={styles.contacts}>
-          <Text>+989212064091</Text>
-          <a href="/">rezakhani96aida@gmail.com</a>
-          <a href="linkedin.com/in/aida-rezakhani-developer">Linkedin</a>
+          <a href="tel:+989212064091" className={styles.text}>
+            +989212064091
+          </a>
+          <a href="mailto:your@mail.com" className={styles.text}>
+            rezakhani96aida@gmail.com
+          </a>
+          <a
+            className={styles.text}
+            href="http://linkedin.com/in/aida-rezakhani-developer"
+          >
+            Linkedin
+          </a>
         </Col>
       </Row>
     </div>

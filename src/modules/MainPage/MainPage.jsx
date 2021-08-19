@@ -25,12 +25,14 @@ const MainPage = () => {
           <PictureAndDescription />
           <Experience />
           <Education />
-          <Courses />
           <Skills />
+          <Courses />
           <LangsAndResearch />
-          <Connections />
         </div>
       </Content>
+      <Footer>
+        <Connections />
+      </Footer>
     </Layout>
   );
 };

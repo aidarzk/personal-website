@@ -27,9 +27,13 @@ const LangsAndResearch = () => {
 
   return (
     <div className={styles.container}>
+      <Title className={styles.title} level={2}>
+        Languages And Research Interest
+      </Title>
       <Row>
         <Col className={styles.column} span={12}>
           <Card
+            className={styles.card}
             title="Languages"
             // extra={<a href="#">More</a>}
             // style={{ width: 300 }}
@@ -58,7 +62,7 @@ const LangsAndResearch = () => {
           <Card
             title="Research Interests"
             // extra={<a href="#">More</a>}
-            // style={{ width: 300 }}
+            className={styles.card}
           >
             <List
               itemLayout="horizontal"

@@ -90,7 +90,8 @@ const Courses = () => {
                       {exp.title}
                     </Title>
                     <Title className={styles.text} level={5}>
-                      {exp.jobTitle}/{exp.date}
+                      {exp.jobTitle}
+                      {exp.date ? "/" + exp.date : ""}
                     </Title>
                   </div>
                 }

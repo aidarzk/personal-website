@@ -92,7 +92,7 @@ const Skills = () => {
               title={skill.title}
               key={skill.id}
               // extra={<a href="#">More</a>}
-              // style={{ width: 300 }}
+              className={styles.card}
             >
               {skill.details.map((item) => (
                 <Text>{item}, </Text>

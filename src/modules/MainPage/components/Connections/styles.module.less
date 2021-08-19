@@ -1,10 +1,10 @@
 .container {
   margin-top: 56px;
-  padding: 24px;
+  padding: 24px 100px !important;
 }
 
 .title {
-  color: #e85a4f !important;
+  color: #47467a !important;
 }
 
 .panel {
@@ -31,16 +31,26 @@
 .descItem {
   :global {
     .ant-list-item-meta-description {
-      color: #736432 !important;
+      color: #191d26 !important;
     }
   }
 }
 
 .text {
-  color: #736432 !important;
+  margin: 8px 16px;
+  font-size: 24px;
 }
 
 .contacts {
-  display: flex;
+  display: flex !important;
   flex-direction: column;
+  :global {
+    .ant-typography {
+      color: #7b88a8 !important;
+    }
+  }
+}
+
+.contacts > a {
+  color: #7b88a8 !important;
 }

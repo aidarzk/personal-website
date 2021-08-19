@@ -85,7 +85,7 @@ const Experience = () => {
           </Title>
         </Col>
         <Col span={16}>
-          <Collapse ghost>
+          <Collapse ghost className={styles.collapse}>
             {experiences.map((exp) => (
               <Panel
                 className={styles.panel}
@@ -131,7 +131,7 @@ const Experience = () => {
                                     avatar={
                                       <CheckCircleTwoTone
                                         // className={styles.icon}
-                                        twoToneColor="#d8c3a5"
+                                        twoToneColor="#e98074"
                                       />
                                     }
                                     description={description}

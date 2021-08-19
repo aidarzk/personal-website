@@ -13,14 +13,12 @@ const blockContent = "im a frontend developer";
 const CustomHeader = () => {
   return (
     <Row className={styles.container}>
-      <Col span={12}>
-        <img className={styles.image} alt="me" src={me} />
-      </Col>
       <Col span={12} className={styles.description}>
         <Typography>
-          <Title strong>hi, i'm aida</Title>
+          <Title className={styles.aida} strong>
+            Hi, I am AIDA, I am a Front-End developer
+          </Title>
           <Paragraph>
-            <blockquote>{blockContent}</blockquote>
             <blockContent>
               I’ve gone through a number of phases in my career, and each of
               them has informed my current work ethos and philosophy. I have
@@ -30,6 +28,9 @@ const CustomHeader = () => {
             </blockContent>
           </Paragraph>
         </Typography>
+      </Col>
+      <Col span={12}>
+        <img className={styles.image} alt="me" src={me} />
       </Col>
     </Row>
   );
